@@ -13,7 +13,7 @@ using System.Configuration;
 
 namespace PharmacyDB
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         SqlConnection connection = null;
         SqlDataAdapter dataAdapter = null;
@@ -111,7 +111,7 @@ namespace PharmacyDB
             buttonUpdate.Enabled = true;
         }
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
